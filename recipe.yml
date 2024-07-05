@@ -1,0 +1,14 @@
+name: 'Sous GraphQL'
+description: 'A recipe that contains modules and configuration for Sous default GraphQL configuration.'
+type: 'Site'
+install:
+  - graphql
+  - graphql_compose
+  - graphql_export
+  - graphql_compose_fragments
+config:
+  import:
+    graphql: '*'
+    graphql_compose: '*'
+    graphql_export: '*'
+    graphql_compose_fragments: '*'

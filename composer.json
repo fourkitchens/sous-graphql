@@ -1,0 +1,20 @@
+{
+    "name": "fourkitchens/sous-graphql",
+    "description": "A recipe that contains modules and configuration for Sous default GraphQL configuration.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Marvin Cortés",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/graphql": "^4.8",
+        "drupal/graphql_compose": "^2.1",
+        "drupal/graphql_compose_fragments-graphql_compose_fragments": "^1.0@beta",
+        "drupal/graphql_export": "^2.0"
+    }
+}
