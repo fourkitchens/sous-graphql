@@ -12,3 +12,12 @@ config:
     graphql_compose: '*'
     graphql_export: '*'
     graphql_compose_fragments: '*'
+    graphql_compose_routes: '*'
+  actions:
+    graphql_compose.settings:
+      simple_config_update:
+        settings.inflector_singularize: false
+        settings.simple_queries: false
+        settings.simple_unions: false
+        settings.svg_image: false
+        settings.svg_filesize: 100
