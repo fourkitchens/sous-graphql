@@ -6,13 +6,20 @@ install:
   - graphql_compose
   - graphql_export
   - graphql_compose_fragments
+  - graphql_compose_menus
+  - graphql_compose_routes
+  - graphql_compose_views
+  - simple_oauth
 config:
   import:
     graphql: '*'
     graphql_compose: '*'
     graphql_export: '*'
     graphql_compose_fragments: '*'
+    graphql_compose_menus: '*'
     graphql_compose_routes: '*'
+    graphql_compose_views: '*'
+    simple_oauth: '*'
   actions:
     graphql_compose.settings:
       simple_config_update:
