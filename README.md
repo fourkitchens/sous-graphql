@@ -28,6 +28,13 @@ Manually applying the recipe to your own project: From your webroot run:
 - Create an oauth folder in the private files directory: `web/sites/default/files/private/oauth`
 - Go to `/admin/config/people/simple_oauth` click Generate keys, set the Directory for the keys to `/app/web/sites/default/files/private/oauth`, generate, and save the configuration.
 
+## Setting Up hash_salt
+- Run lando `lando drush php-eval 'echo \Drupal\Component\Utility\Crypt::randomBytesBase64(55) . "\n";' | pbcopy`. [See more](https://blokspeed.net/2018/quick-tip-generating-hash-salt-drupal-8)
+- Go to `web/sites/default/settings.php` and paste the output from the previous command into the hash_salt setting.
+```
+  $settings['hash_salt'] = 'OUTPUT';
+```
+
 ### Create Role for GraphQL API
 - Create a role with these permissions (e.g., GraphQL API):
   - GraphQL Compose - Server: Execute arbitrary requests
