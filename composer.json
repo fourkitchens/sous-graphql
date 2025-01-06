@@ -12,10 +12,11 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "drupal/graphql": "^4.8",
-        "drupal/graphql_compose": "^2.1",
+        "drupal/graphql": "^4.10",
+        "drupal/graphql_compose": "^2.2",
         "drupal/graphql_compose_fragments-graphql_compose_fragments": "^1.0",
         "drupal/graphql_export": "^2.0",
-        "drupal/simple_oauth" :"^5.2"
+        "drupal/simple_oauth" :"^6.0@beta",
+        "drupal/view_unpublished" :"^1.3"
     }
 }
