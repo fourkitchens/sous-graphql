@@ -4,21 +4,24 @@ type: 'Site'
 install:
   - graphql
   - graphql_compose
-  - graphql_export
+  - graphql_compose_edges
   - graphql_compose_fragments
   - graphql_compose_menus
   - graphql_compose_routes
   - graphql_compose_views
+  - graphql_export
   - simple_oauth
+  - view_unpublished
 config:
   import:
     graphql: '*'
     graphql_compose: '*'
-    graphql_export: '*'
+    graphql_compose_edges: '*'
     graphql_compose_fragments: '*'
     graphql_compose_menus: '*'
     graphql_compose_routes: '*'
     graphql_compose_views: '*'
+    graphql_export: '*'
     simple_oauth: '*'
   actions:
     graphql_compose.settings:
@@ -26,5 +29,3 @@ config:
         settings.inflector_singularize: false
         settings.simple_queries: false
         settings.simple_unions: false
-        settings.svg_image: false
-        settings.svg_filesize: 100
