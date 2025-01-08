@@ -26,6 +26,7 @@ config:
   actions:
     graphql_compose.settings:
       simple_config_update:
+        exclude_unpublished: false
         settings.inflector_singularize: false
         settings.simple_queries: false
         settings.simple_unions: false
